@@ -1,0 +1,72 @@
+<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>Prism Lens (v0.1)</title><style>
+      * {
+        font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+      }
+      html, body {
+        margin: 0;
+        padding: 0;
+      }
+      h1 {
+        font-size: 50px;
+        margin-bottom: 17px;
+        color: #333;
+      }
+      h2 {
+        font-size: 24px;
+        line-height: 1.6;
+        margin: 30px 0 0 0;
+        margin-bottom: 18px;
+        margin-top: 33px;
+        color: #333;
+      }
+      h3 {
+        font-size: 30px;
+        margin: 10px 0 20px 0;
+        color: #333;
+      }
+      header {
+        width: 640px;
+        margin: auto;
+      }
+      section {
+        width: 640px;
+        margin: auto;
+      }
+      section p {
+        margin-bottom: 27px;
+        font-size: 20px;
+        line-height: 1.6;
+        color: #333;
+      }
+      section img {
+        max-width: 640px;
+      }
+      footer {
+        padding: 0 20px;
+        margin: 50px 0;
+        text-align: center;
+        font-size: 12px;
+      }
+      .aspectRatioPlaceholder {
+        max-width: auto !important;
+        max-height: auto !important;
+      }
+      .aspectRatioPlaceholder-fill {
+        padding-bottom: 0 !important;
+      }
+      header,
+      section[data-field=subtitle],
+      section[data-field=description] {
+        display: none;
+      }
+      </style></head><body><article class="h-entry">
+<header>
+<h1 class="p-name">Prism Lens (v0.1)</h1>
+</header>
+<section data-field="subtitle" class="p-summary">
+Assumptions
+</section>
+<section data-field="body" class="e-content">
+<section name="859a" class="section section--body section--first section--last"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><h2 name="bae8" id="bae8" class="graf graf--h2 graf--leading graf--title">Prism Lens (v0.1)</h2><h4 name="2adf" id="2adf" class="graf graf--h4 graf-after--h2 graf--subtitle">Assumptions</h4><p name="45ac" id="45ac" class="graf graf--p graf--startsWithDoubleQuote graf-after--h4">“<em class="markup--em markup--p-em">Capture &amp; Share any perspective at the speed of thought”</em></p><p name="54df" id="54df" class="graf graf--p graf-after--p">This is the experience that we want to achieve with Prism Lens, our first native iOS app, that will allow users to easily capture and share any screenshot with anyone.</p><p name="34a5" id="34a5" class="graf graf--p graf-after--p"><strong class="markup--strong markup--p-strong">Assumption #1:</strong> People like using the screenshot behavior because it is quick and intimate. It’s the equivalent of “here’s what I’m seeing right now” or “here’s what i’m working on currently”.</p><p name="8283" id="8283" class="graf graf--p graf-after--p">Despite sharing ad-hoc screenshots today via tools like<a href="https://medium.com/@adambreckler/prism-0-1-alpha-d401cb09a3a5" data-href="https://medium.com/@adambreckler/prism-0-1-alpha-d401cb09a3a5" class="markup--anchor markup--p-anchor" target="_blank"> prism (web)</a>, email, chat apps and project management tools, users would prefer a more seamless way of capturing and sharing the screenshots they take (especially on mobile, where the pain is more acute).</p><p name="77e9" id="77e9" class="graf graf--p graf-after--p">In fact the act of taking an sharing a screenshot today, resembles something more akin to a hack or user ‘desire path’ than a well thought out and designed workflow that seamless integrates into other workflows.</p><figure name="2a0e" id="2a0e" class="graf graf--figure graf--iframe graf-after--p"><blockquote class="twitter-tweet"><a href="https://twitter.com/BenedictEvans/status/545642603312447489"></a></blockquote><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></figure><p name="9579" id="9579" class="graf graf--p graf-after--figure"><strong class="markup--strong markup--p-strong">Assumption #2: </strong>A tool focused on capturing and sharing screenshots must be general purpose enough to fit into a broad enough range of use cases and provide value from day 1 without any upfront investment or change in behaviour.</p><p name="d9de" id="d9de" class="graf graf--p graf-after--p">This also implies that prism lens must be useful in both a professional setting (e.g: sharing app design inspiration or a bug report) and personal setting with varied use cases (sharing a screenshot of a text conversation or funny tweet). There simply doesn’t seem to be enough space in users head’s for remembering to use a screenshot sharing app that is only meant for a single purpose or narrow set of use cases.</p><h4 name="4c89" id="4c89" class="graf graf--h4 graf-after--p">Goals</h4><p name="e945" id="e945" class="graf graf--p graf-after--h4">Even though sharing a screenshot can be a relatively painless experience for some, most people get a sense that there could be a more optimal way to be capturing, sharing and organizing their screenshots.</p><p name="e5b9" id="e5b9" class="graf graf--p graf-after--p">In fact it turns out that the typical sharing flow alone takes <strong class="markup--strong markup--p-strong"><em class="markup--em markup--p-em">11 actions</em></strong> and <strong class="markup--strong markup--p-strong"><em class="markup--em markup--p-em">40 seconds today!</em></strong></p><figure name="747d" id="747d" class="graf graf--figure graf-after--p"><img class="graf-image" data-image-id="1*1jH2vsskQmNPh26fQVT2fg.png" data-width="844" data-height="456" src="https://cdn-images-1.medium.com/max/800/1*1jH2vsskQmNPh26fQVT2fg.png"></figure><blockquote name="5425" id="5425" class="graf graf--pullquote graf-after--figure">Since taking a screenshot is now starting to become ingrained as a natural user behavior, any tool meant to enhance this behavior must simultaneously tap into the existing behavior while not interrupting it.</blockquote><p name="8a5f" id="8a5f" class="graf graf--p graf-after--pullquote">For this reason we are designing prism lens to tap into the native user behavior by detecting a screenshot event and then presenting itself in context of the app/experience.</p><p name="73c3" id="73c3" class="graf graf--p graf-after--p"><strong class="markup--strong markup--p-strong">Step 1</strong>: Take a screenshot (native),<strong class="markup--strong markup--p-strong"> Step 2:</strong> Prism lens triggers a sharing dialog. <strong class="markup--strong markup--p-strong">Step 3:</strong> User adds a message and hits ‘share’!</p><figure name="1d6f" id="1d6f" class="graf graf--figure graf-after--p"><img class="graf-image" data-image-id="1*Qphb042USaR-Vx4qo0-Z4A.gif" data-width="279" data-height="500" src="https://cdn-images-1.medium.com/max/800/1*Qphb042USaR-Vx4qo0-Z4A.gif"></figure><p name="8ac8" id="8ac8" class="graf graf--p graf-after--figure">For v.1 of the app we are focused on building a useful ‘single-player’ experience for capturing &amp; sharing screenshots, but could easily imagine a version down the road where (users|colleagues|connections) shared screenshots organized by app (product), content topic (#customer-acquisition, #design) or team (#marketing, #sales, #ux).</p><p name="daa8" id="daa8" class="graf graf--p graf-after--p">Other things that we are considering now but require future discovery and experimentation before building out include:</p><ol class="postList"><li name="d051" id="d051" class="graf graf--li graf--startsWithSingleQuote graf-after--p"><strong class="markup--strong markup--li-strong">‘Boards</strong>’ and other organization &amp; collaboration, communication functionality like comments that we have in the web app, but are not yet obviously useful in a mobile context.</li><li name="a5d1" id="a5d1" class="graf graf--li graf-after--li"><strong class="markup--strong markup--li-strong">An API</strong> for 3rd party app developers to integrate and build on top of our ‘smart’ screenshot sharing functionality.</li><li name="937f" id="937f" class="graf graf--li graf-after--li">An interface for <strong class="markup--strong markup--li-strong">search &amp; discovery</strong> of screenshots.</li><li name="9320" id="9320" class="graf graf--li graf-after--li"><strong class="markup--strong markup--li-strong">Annotation</strong>: While useful in certain contexts, isn’t something that most users can’t live without for now.</li></ol><h4 name="0f27" id="0f27" class="graf graf--h4 graf-after--li">To sum up</h4><p name="a983" id="a983" class="graf graf--p graf-after--h4">Simply stated we think that there is a great opportunity in front of us to build the mobile equivalent of the <a href="http://en.memory-alpha.wikia.com/wiki/Vulcan_mind_meld" data-href="http://en.memory-alpha.wikia.com/wiki/Vulcan_mind_meld" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">Vulcan Mind Meld</a> and that screenshots are the best starting point to transmit visual context across connected devices that users are already familiar with.</p><blockquote name="db73" id="db73" class="graf graf--pullquote graf-after--p">the act of taking a screenshot should be both a delightful experience as well as enhancing the historical record</blockquote><p name="d919" id="d919" class="graf graf--p graf-after--pullquote graf--trailing">Because screenshot sharing is such an increasingly important part of the information worker’s communication workflow it should also be made more useful for documentation, retrievability, search as well as transmitting just the right amount of context depending on the screenshot destination in the <a href="https://medium.com/@adambreckler/smarter-screenshots-dafa323e038f" data-href="https://medium.com/@adambreckler/smarter-screenshots-dafa323e038f" class="markup--anchor markup--p-anchor" target="_blank">future in a ‘smart’ way</a> so that context doesn’t get lost like in ‘<a href="https://en.wikipedia.org/wiki/Chinese_whispers" data-href="https://en.wikipedia.org/wiki/Chinese_whispers" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">telephone</a>’.</p></div></div></section>
+</section>
+<footer><p>By <a href="https://medium.com/@adambreckler" class="p-author h-card">Adam Breckler</a> on <a href="https://medium.com/p/bb5711892296"><time class="dt-published" datetime="2015-07-13T20:54:20.210Z">July 13, 2015</time></a>.</p><p><a href="https://medium.com/@adambreckler/prism-lens-v0-1-bb5711892296" class="p-canonical">Canonical link</a></p><p>Exported from <a href="https://medium.com">Medium</a> on February 7, 2023.</p></footer></article></body></html>
